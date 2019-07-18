@@ -1,0 +1,12 @@
+i@group_foam = 0;
+i@group_bubbles = 0;
+i@group_spray = 0;
+if (@spray>0.0) {
+    i@group_spray = 1;
+} else {
+    if (@foam>@bubble) {
+        i@group_foam = 1;
+    } else {
+        i@group_bubbles = 1;
+    }
+}
